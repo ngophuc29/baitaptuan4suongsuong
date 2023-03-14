@@ -23,14 +23,14 @@
             width: 910px;
             /* background-color: bisque; */
             border-left: 1px solid #ccc;
-            padding: 0 20px;
+            padding: 0 38px;
             border-right: 1px solid #ccc;
         }
         
         #right {
             width: 440px;
             /* background-color: aqua; */
-            margin-left: 17px;
+            /* margin-left: 33px; */
             margin-top: 10px;
         }
         
@@ -249,6 +249,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-left: 33px;
         }
         
         .right__header__left {
@@ -277,6 +278,67 @@
             border-radius: 6px;
             display: flex;
         }
+        ul{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .right__member__list{
+            border-bottom: 2px solid #ccc;
+            padding-left: 33px;
+            padding-bottom: 20px;
+        }
+.right_member__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right_member__item__iname{
+    display: flex;
+    align-items: center;
+}
+.right_member__item__vvcham{
+    display: flex;
+    align-items: center;
+}   
+.right_member__item__vvcham img{
+    padding: 0 5px;
+}
+
+.right__chat{   
+    margin-left: 33px;
+}
+.right__chat__heading{
+    font-size: 27px;
+}
+.right__chat__list{
+
+}
+.right__chat__item{
+    margin-bottom: 18px;
+}
+.right__chat__item__name_line{
+    display: flex;
+    align-items: center;
+}
+.right__chat__item__name{
+    padding: 0 17px;
+    font-size: 17px;
+}
+.right__chat__item__name__item{
+    font-size: 13px;
+    color: #b5b1b1;
+
+}
+.right__chat__box{
+    background-color: #cccccc3d;
+    padding: 16px;
+    margin-left: 53px;
+}
+.right__chat__form{
+    position: relative;
+}
     </style>
 </head>
 
@@ -458,12 +520,181 @@
                         </span>
                     </div>
                     <div class="right__header__right">
-                        <p style="    margin: 0 8px 0 3px;">+</p> Add
+                        <h1 style="    margin: 0 8px 0 3px;font-size: 27px;">+</h1> Add
                     </div>
 
 
                 </div>
 
+                <ul class="right__member__list">
+                   <li class="right_member__item">
+                        <div class="right_member__item__iname">
+                            <img src="avatar 1322.png" alt="" style="    margin-right: 10px;">
+                            Benjamin Crawford
+                        </div>
+                        <div class="right_member__item__vvcham">
+                            <img src="mic1.png" alt="" class="">
+                            <img src="cam_small.png" alt="">
+                            <p style="      transform: scale(2.5);
+                            color: #6e7787;
+                            position: relative;
+                            top: -9px;
+                            left: 16px;">...</p>
+                        </div>
+                   </li> 
+                   <li class="right_member__item">
+                    <div class="right_member__item__iname">
+                        <img src="avatar 1323.png" alt="" style="    margin-right: 10px;">
+                        Christian Scott
+                    </div>
+                    <div class="right_member__item__vvcham">
+                        <img src="mic1.png" alt="" class="">
+                        <img src="cam_small.png" alt="">
+                        <p style="      transform: scale(2.5);
+                        color: #6e7787;
+                        position: relative;
+                        top: -9px;
+                        left: 16px;">...</p>
+                    </div>
+               </li> 
+               <li class="right_member__item">
+                <div class="right_member__item__iname">
+                    <img src="avatar 1324.png" alt="" style="    margin-right: 10px;">
+                    Deborah Chu
+                </div>
+                <div class="right_member__item__vvcham">
+                    <img src="mic2.png" alt="" class="">
+                    <img src="cam_small.png" alt="">
+                    <p style="      transform: scale(2.5);
+                    color: #6e7787;
+                    position: relative;
+                    top: -9px;
+                    left: 16px;">...</p>
+                </div>
+           </li> 
+
+           <li class="right_member__item">
+            <div class="right_member__item__iname">
+                <img src="avatar 1325.png" alt="" style="    margin-right: 10px;">
+                Jordan Nieves
+            </div>
+            <div class="right_member__item__vvcham">
+                <img src="mic1.png" alt="" class="">
+                <img src="cam_small.png" alt="">
+                <p style="      transform: scale(2.5);
+                color: #6e7787;
+                position: relative;
+                top: -9px;
+                left: 16px;">...</p>
+            </div>
+            </li> 
+                </ul>
+
+                <div class="right__chat">
+                    <h3 class="right__chat__heading">
+                        Chat
+                    </h3>
+
+                    <ul class="right__chat__list">
+                        <li class="right__chat__item">
+                            <div class="right__chat__item__name_line">
+                                <img src="avatar 1326.png" alt="" >
+                                <h3 class="right__chat__item__name">
+                                    Deborah Chu
+                                </h3>
+                                <p class="right__chat__item__name__item">
+                                    1:12pm
+                                </p>
+                            </div>
+                            <div class="right__chat__box">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae dolorem quidem illum corrupti explicabo?
+                            </div>
+                        </li>
+                        <li class="right__chat__item">
+                            <div class="right__chat__item__name_line">
+                                <img src="avatar 1327.png" alt="" >
+                                <h3 class="right__chat__item__name">
+                                    Jordan Nieves
+                                </h3>
+                                <p class="right__chat__item__name__item">
+                                    1:12pm
+                                </p>
+                            </div>
+                            <div class="right__chat__box">
+                                Lpisicing elit. Ipsa repudiandae dolorem quidem illum corrupti explicabo?
+                            </div>
+                        </li>
+                        <li class="right__chat__item">
+                            <div class="right__chat__item__name_line">
+                                <img src="avatar 1328.png" alt="" >
+                                <h3 class="right__chat__item__name">
+                                   Benjamin Crawford
+                                </h3>
+                                <p class="right__chat__item__name__item">
+                                    1:12pm
+                                </p>
+                            </div>
+                            <div style="      background-color: #ffc0cb45;
+                            width: 120px;
+                            height: 54px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 58px;">
+                               <img src="thwthw-removebg-preview.png" alt="">
+                               <img src="thwthw-removebg-preview.png" alt="">
+
+                                
+
+                            </div>
+                        </li>
+                        <li class="right__chat__item">
+                            <div class="right__chat__item__name_line">
+                                <img src="avatar 1329.png" alt="" >
+                                <h3 class="right__chat__item__name">
+                                   Christian Scott
+                                </h3>
+                               
+                            </div>
+                          
+                        </li>
+                    </ul>
+
+
+
+                    <div class="right__chat__form">
+                        <form action=""  style="display: flex;align-items: center;">
+
+                            <input type="text" name="" id="" placeholder="Add"
+                            style="    background-color: #f3f4f6;
+                            border: none;
+                            outline: none;
+                            /* padding: 20px 41px 16px 0; */
+                            width: 323px;
+                            height: 44px;
+                            padding-left: 18px;"
+                            >
+                            <div class="" style="position: absolute;     right: 64px;
+                            top: 14px;">
+                                <img src="smile-face.png" alt="" style="    width: 19px;">
+                            </div>
+                            <input type="submit" name="submit" value="Send" id="submit" style="     color: #fff;
+                            font-size: 0;
+                            width: 52px;
+                            height: 36px;
+                            border: none;
+                            cursor: pointer;
+                            margin: 0;
+                            padding: 0;
+                            background: url(send.png) no-repeat;
+                            /* display: flex; */
+                            /* align-items: center; */
+                            position: relative;
+                            top: -3px;
+                            left: 14px;">
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </div>
