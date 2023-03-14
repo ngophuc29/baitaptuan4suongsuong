@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 910px;
+            /* background-color: bisque; */
+            border-left: 1px solid #ccc;
+            padding: 0 20px;
+            border-right: 1px solid #ccc;
+        }
+        
+        #right {
+            width: 440px;
+            background-color: aqua;
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+        /* center */
+        
+        .center__header {}
+        
+        .center__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .center__head__heading {
+            font-size: 25px;
+        }
+        
+        .ee {}
+        
+        .center__head__button {
+            padding: 10px 14px;
+            border: 1px solid red;
+            border-radius: 18px;
+            color: red;
+            display: flex;
+            align-items: center;
+        }
+        
+        .center__head__button__cham {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 11px;
+            margin-right: 8px;
+        }
+        
+        .center__head__button__cham1 {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border-radius: 11px;
+            margin-right: 8px;
+        }
+        
+        .center__head__sub {
+            display: flex;
+            align-items: center;
+        }
+        
+        .center__head__sub__button {
+            display: flex;
+            padding: 5px;
+            background-color: #e34d73;
+            color: #fff;
+            align-items: center;
+            border-radius: 40px;
+            margin-right: 13px;
+        }
+        
+        .center__head__sub__button__icon__wrapp {
+            background-color: #fff;
+            padding: 2px;
+            border-radius: 11px;
+            margin-right: 5px;
+            font-size: 11px;
+        }
+        
+        .center__head__sub__celendar {
+            /* margin-right: 13px; */
+            border-right: 2px solid #ccc;
+            padding-right: 9px;
+        }
+        
+        .center__head__sub__time {
+            padding-left: 9px;
+        }
+        
+        .center__body {
+            margin-top: 30px;
+        }
+        
+        .center__body__slider {
+            position: relative;
+        }
+        
+        .center__body__slider__wrapp {}
+        
+        .center__body__slider__img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .center__body__slider__sub {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 15px;
+            width: 94%;
+            left: 27px;
+        }
+        
+        .center__body__slider__sub__name {
+            display: flex;
+            align-items: center;
+            background-color: #8c8f95;
+            width: 154px;
+            padding: 8px;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        .center__head__button__cham1 {}
+        
+        .center__body__slider__sub__fullname {}
+        
+        .center__body__slider__sub__void {
+            background-color: #e34d73;
+            width: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 37px;
+            border-radius: 3px;
+        }
+        
+        .center__body__list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        
+        .center__body__item {
+            position: relative;
+        }
+        
+        .center__body__item__img__wrapp {}
+        
+        .center__body__item__img {
+            width: 100%;
+        }
+        
+        .center__body__item__sub {
+            display: flex;
+            top: 9px;
+            width: 93%;
+            position: absolute;
+            justify-content: space-between;
+            left: 8px;
+        }
+        
+        .center__body__item__sub__name {
+            display: flex;
+            width: 152px;
+            align-items: center;
+            height: 29px;
+            justify-content: center;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #fff;
+            background-color: rgb(140 143 149 / 60%);
+        }
+        
+        .img_center_bo {
+            width: 28px;
+        }
+        
+        .center__head__button__cham1 {}
+        
+        .center__body__item__sub__fullname {}
+        
+        .center__body__item__sub__void {}
+        
+        .center__body__option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .center__body__option__item {
+            margin: 30px 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="logo.png" alt="">
+                    <img class="item" src="home.png" alt="">
+                    <img class="item" src="cam.png" alt="">
+                    <img class="item" src="chatting.png" alt="">
+                    <img class="item" src="user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="avatar.png" width="44" alt="">
+                    <img id="setting" src="setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+
+                <div class="center__header">
+                    <div class="center__head">
+                        <h4 class="center__head__heading">
+                            Meeting Title
+                        </h4>
+
+                        <div class="center__head__button">
+                            <span class="center__head__button__cham"></span> 12:00
+                        </div>
+                    </div>
+
+                    <div class="center__head__sub">
+                        <div class="center__head__sub__button">
+                            <div class="center__head__sub__button__icon__wrapp">
+                                <i class="ti-user" style="color:#e34d73
+                                "></i>
+                            </div>
+                            Internal
+                        </div>
+
+                        <div class="center__head__sub__celendar">
+                            <i class="ti-calendar" style="color: #9299a5;    margin-right: 6px;"></i> Sep 02 , 2033
+                        </div>
+
+                        <div class="center__head__sub__time">
+                            08:00 - 09:00 AM
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="center__body">
+                    <div class="center__body__slider">
+                        <div class="center__body__slider__wrapp">
+                            <img src="img_big.png" alt="" class="center__body__slider__img">
+                        </div>
+                        <div class="center__body__slider__sub">
+                            <div class="center__body__slider__sub__name">
+                                <span class="center__head__button__cham1"></span>
+                                <span class="center__body__slider__sub__fullname">
+                                    Benjamin Crawford
+                                </span>
+                            </div>
+
+                            <div class="center__body__slider__sub__void">
+                                <img src="miczz-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="center__body__list">
+                        <div class="center__body__item">
+                            <div class="center__body__item__img__wrapp">
+                                <img src="img2.png" alt="" class="center__body__item__img">
+                            </div>
+                            <div class="center__body__item__sub">
+                                <div class="center__body__item__sub__name">
+                                    <span class="center__head__button__cham1"></span>
+                                    <span class="center__body__item__sub__fullname">
+                                        Benjamin Crawford
+                                    </span>
+                                </div>
+
+                                <div class="center__body__item__sub__void">
+                                    <img src="mic_grey_color.png" alt="" class="img_center_bo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center__body__item">
+                            <div class="center__body__item__img__wrapp">
+                                <img src="img1.png" alt="" class="center__body__item__img">
+                            </div>
+                            <div class="center__body__item__sub">
+                                <div class="center__body__item__sub__name">
+                                    <span class="center__head__button__cham1"></span>
+                                    <span class="center__body__item__sub__fullname">
+                                        Benjamin Crawford
+                                    </span>
+                                </div>
+
+                                <div class="center__body__item__sub__void">
+                                    <img src="mic_grey_color.png" alt="" class="img_center_bo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center__body__item">
+                            <div class="center__body__item__img__wrapp">
+                                <img src="img.png" alt="" class="center__body__item__img">
+                            </div>
+                            <div class="center__body__item__sub">
+                                <div class="center__body__item__sub__name">
+                                    <span class="center__head__button__cham1"></span>
+                                    <span class="center__body__item__sub__fullname">
+                                        Benjamin Crawford
+                                    </span>
+                                </div>
+
+                                <div class="center__body__item__sub__void">
+                                    <img src="mic_grey_color.png" style="    width: 28  px;" alt="" class="img_center_bo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- center  option-->
+
+                    <div class="center__body__option">
+                        <div class="center__body__option__item">
+                            <img src="mic_grey_color.png" alt="">
+                        </div>
+                        <div class="center__body__option__item">
+                            <img src="cam_color.png" alt="">
+                        </div>
+                        <div class="center__body__option__item">
+                            <img src="speaker_grey_color.png" alt="">
+                        </div>
+                        <div class="center__body__option__item">
+                            <div class="" style="      background-color: red;
+                            color: #fff;
+                            width: 113px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 12px 0;
+                            border-radius: 4px;
+                            position: relative;
+                            top: -2px;">
+                                End Meeting
+                            </div>
+                        </div>
+                        <div class="center__body__option__item">
+                            <img src="Button 2179.png" alt="">
+                        </div>
+                        <div class="center__body__option__item">
+                            <img src="share.png" alt="">
+                        </div>
+                        <div class="center__body__option__item">
+                            <img src="chambacham.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="right">right</div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
